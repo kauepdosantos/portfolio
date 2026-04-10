@@ -1,75 +1,3 @@
-📡 Projeto Packet Tracer - VLANs + Roteamento + Serviços de Rede
-
-Este projeto simula uma rede corporativa utilizando o Cisco Packet Tracer, com segmentação por VLANs, roteamento inter-VLAN (router-on-a-stick) e implementação de serviços essenciais de rede.
-
-🧠 Objetivo
-
-Demonstrar conhecimentos práticos em:
-
-VLANs
-Roteamento inter-VLAN
-Serviços de rede
-Controle de acesso (ACL)
-Acesso remoto via SSH
-
-🏗️ Topologia
-
-A rede foi segmentada em 3 VLANs:
-
-VLAN 10 → Administração
-VLAN 20 → Financeiro
-VLAN 30 → Visitantes
-
-Um roteador foi utilizado para permitir a comunicação entre VLANs utilizando o método Router-on-a-Stick (Roteamento Palito).
-
-🔀 Roteamento
-
-Foi configurado roteamento inter-VLAN com subinterfaces no roteador:
-
-G0/0.10 → VLAN 10
-G0/0.20 → VLAN 20
-G0/0.30 → VLAN 30
-
-Cada subinterface possui encapsulamento 802.1Q.
-
-🌐 Serviços de Rede
-
-Um servidor central foi configurado com os seguintes serviços:
-
-DHCP → Distribuição automática de IPs para as VLANs
-HTTP → Hospedagem de página web
-DNS → Resolução de nomes
-FTP → Transferência de arquivos
-TFTP → Backup e transferência de configurações
-
-🔐 Segurança
-
-ACL (Access Control List)
-
-Foi criada uma regra de segurança para restringir acessos:
-
-❌ VLAN 30 não pode acessar a VLAN 20
-
-Isso simula um cenário onde visitantes não têm acesso à rede interna sensível.
-
-🔑 Acesso Remoto
-
-O roteador foi configurado para acesso remoto seguro via SSH, permitindo administração remota com autenticação segura.
-
-🛠️ Tecnologias Utilizadas
-Cisco Packet Tracer
-VLAN (802.1Q)
-Router-on-a-Stick
-DHCP, DNS, HTTP, FTP, TFTP
-ACL
-SSH
-
-🚀 Observações
-
-Este projeto foi desenvolvido com fins de aprendizado e prática em redes, sendo ideal para demonstrar habilidades básicas de infraestrutura em ambientes simulados.
-
----
-
 📡 Packet Tracer Project - VLANs + Routing + Network Services
 
 This project simulates a corporate network using Cisco Packet Tracer, featuring VLAN segmentation, inter-VLAN routing (router-on-a-stick), and implementation of essential network services.
@@ -143,3 +71,76 @@ SSH
 🚀 Notes
 
 This project was developed for learning and practice purposes, and is suitable for demonstrating basic networking and infrastructure skills in a simulated environment.
+
+---
+
+
+📡 Projeto Packet Tracer - VLANs + Roteamento + Serviços de Rede
+
+Este projeto simula uma rede corporativa utilizando o Cisco Packet Tracer, com segmentação por VLANs, roteamento inter-VLAN (router-on-a-stick) e implementação de serviços essenciais de rede.
+
+🧠 Objetivo
+
+Demonstrar conhecimentos práticos em:
+
+VLANs
+Roteamento inter-VLAN
+Serviços de rede
+Controle de acesso (ACL)
+Acesso remoto via SSH
+
+🏗️ Topologia
+
+A rede foi segmentada em 3 VLANs:
+
+VLAN 10 → Administração
+VLAN 20 → Financeiro
+VLAN 30 → Visitantes
+
+Um roteador foi utilizado para permitir a comunicação entre VLANs utilizando o método Router-on-a-Stick (Roteamento Palito).
+
+🔀 Roteamento
+
+Foi configurado roteamento inter-VLAN com subinterfaces no roteador:
+
+G0/0.10 → VLAN 10
+G0/0.20 → VLAN 20
+G0/0.30 → VLAN 30
+
+Cada subinterface possui encapsulamento 802.1Q.
+
+🌐 Serviços de Rede
+
+Um servidor central foi configurado com os seguintes serviços:
+
+DHCP → Distribuição automática de IPs para as VLANs
+HTTP → Hospedagem de página web
+DNS → Resolução de nomes
+FTP → Transferência de arquivos
+TFTP → Backup e transferência de configurações
+
+🔐 Segurança
+
+ACL (Access Control List)
+
+Foi criada uma regra de segurança para restringir acessos:
+
+❌ VLAN 30 não pode acessar a VLAN 20
+
+Isso simula um cenário onde visitantes não têm acesso à rede interna sensível.
+
+🔑 Acesso Remoto
+
+O roteador foi configurado para acesso remoto seguro via SSH, permitindo administração remota com autenticação segura.
+
+🛠️ Tecnologias Utilizadas
+Cisco Packet Tracer
+VLAN (802.1Q)
+Router-on-a-Stick
+DHCP, DNS, HTTP, FTP, TFTP
+ACL
+SSH
+
+🚀 Observações
+
+Este projeto foi desenvolvido com fins de aprendizado e prática em redes, sendo ideal para demonstrar habilidades básicas de infraestrutura em ambientes simulados.
